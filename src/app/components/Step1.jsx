@@ -49,7 +49,7 @@ export default function Step1({ nextStep, updateFormData, defaultValues }) {
         {errors.phone && <p className="text-red-500">{errors.phone.message}</p>}
       </div>
 
-      <button type="submit" className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
+      <button type="submit" className="px-4 py-2 max-sm:w-full bg-blue-600 text-white rounded hover:bg-blue-700">
         Next Step
       </button>
     </form>
