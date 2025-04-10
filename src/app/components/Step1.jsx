@@ -31,7 +31,7 @@ export default function Step1({ nextStep, updateFormData, defaultValues }) {
 
       <div>
         <label className="text-xl">Full Name :</label>
-        <input {...register("fullName")} className="border ml-2 rounded-lg hover:bg-gray-100" />
+        <input {...register("fullName")} className="border ml-2 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600" />
         {errors.fullName && (
           <p className="text-red-500">{errors.fullName.message}</p>
         )}
@@ -39,13 +39,13 @@ export default function Step1({ nextStep, updateFormData, defaultValues }) {
 
       <div>
         <label className="text-xl">Email :</label>
-        <input {...register("email")} className="border ml-2 rounded-lg hover:bg-gray-100 " />
+        <input {...register("email")} className="border ml-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600" />
         {errors.email && <p className="text-red-500">{errors.email.message}</p>}
       </div>
 
       <div>
         <label className="text-xl">Phone Number :</label>
-        <input {...register("phone")} className="border ml-2 rounded-lg hover:bg-gray-100" />
+        <input {...register("phone")} className="border ml-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600" />
         {errors.phone && <p className="text-red-500">{errors.phone.message}</p>}
       </div>
 

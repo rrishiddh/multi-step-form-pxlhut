@@ -48,7 +48,7 @@ export default function Step3({
           <label className="text-xl">Username : </label>
           <input
             {...register("username")}
-            className="border ml-2 rounded-lg hover:bg-gray-100"
+            className="border ml-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600"
           />
           {errors.username && (
             <p className="text-red-500">{errors.username.message}</p>
@@ -60,7 +60,7 @@ export default function Step3({
           <input
             type="password"
             {...register("password")}
-            className="border ml-2 rounded-lg hover:bg-gray-100"
+            className="border ml-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600"
           />
           {errors.password && (
             <p className="text-red-500">{errors.password.message}</p>
@@ -72,7 +72,7 @@ export default function Step3({
           <input
             type="password"
             {...register("confirmPassword")}
-            className="border ml-2 rounded-lg hover:bg-gray-100"
+            className="border ml-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600"
           />
           {errors.confirmPassword && (
             <p className="text-red-500">{errors.confirmPassword.message}</p>

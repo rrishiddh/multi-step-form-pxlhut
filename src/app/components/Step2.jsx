@@ -46,7 +46,7 @@ export default function Step2({
           <label className="text-xl">Street Address :</label>
           <input
             {...register("street")}
-            className="border ml-2 rounded-lg hover:bg-gray-100"
+            className="border ml-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600"
           />
           {errors.street && (
             <p className="text-red-500">{errors.street.message}</p>
@@ -57,7 +57,7 @@ export default function Step2({
           <label className="text-xl">City :</label>
           <input
             {...register("city")}
-            className="border ml-2 rounded-lg hover:bg-gray-100"
+            className="border ml-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600"
           />
           {errors.city && <p className="text-red-500">{errors.city.message}</p>}
         </div>
@@ -66,7 +66,7 @@ export default function Step2({
           <label className="text-xl">Zip Code :</label>
           <input
             {...register("zip")}
-            className="border ml-2 rounded-lg hover:bg-gray-100"
+            className="border ml-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600"
           />
           {errors.zip && <p className="text-red-500">{errors.zip.message}</p>}
         </div>
@@ -75,7 +75,7 @@ export default function Step2({
           <button
             type="button"
             onClick={prevStep}
-            className="px-4 py-2 bg-gray-300 text-gray-800 rounded hover:bg-gray-400"
+            className="px-4 py-2 bg-gray-300 text-gray-800 rounded hover:bg-gray-400 "
           >
             Previous Step
           </button>
